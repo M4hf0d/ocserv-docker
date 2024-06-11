@@ -5,7 +5,7 @@ services:
     restart: always
     container_name: ocserv
     privileged: true
-    hostname: <IP>
+    hostname: 34.32.135.56
     ports:
       - 5443:443/udp
       - 5443:443
