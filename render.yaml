@@ -1,0 +1,22 @@
+services:
+
+ ocserv:
+
+   image: rezabeigi/ocserv:latest # Public image reference
+
+   env:
+
+     # Define any environment variables your application needs
+
+   ports:
+
+     - 443:443/udp # UDP port for ocserv
+
+     - 443:443    # TCP port for HTTPS (assuming ocserv uses HTTPS)
+
+   volumes:
+
+     - local-data:/etc/ocserv/data # Mount a local volume for persistent data
+
+
+
